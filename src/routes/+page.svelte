@@ -23,6 +23,7 @@
 	const bannerWebpSrcset: string = `${bannerWebp.src} ${bannerWebp.width}w, ${bannerWebpM.src} ${bannerWebpM.width}w, ${bannerWebpS.src} ${bannerWebpS.width}w`;
 
 	import banner from '$lib/images/banner.jpg?as=metadata';
+	import blurBanner from '$lib/images/banner-s.jpg?blur=10';
 </script>
 
 <Metatags
@@ -41,9 +42,10 @@
 		<div class="hero-content flex-col lg:flex-row">
 			<Picture
 				alt="banner"
-				loading="eager"
+				loading="lazy"
 				fetchpriority="high"
 				image={banner}
+				blurImage={blurBanner}
 				srcsetAvif={bannerAvifSrcset}
 				srcsetWebp={bannerWebpSrcset}
 				css="max-w-sm rounded-lg shadow-2xl"
