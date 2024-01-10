@@ -3,7 +3,8 @@ import { dev } from '$app/environment';
 // Basic site information
 const url: string = dev ? 'http://localhost:5173/' : 'https://realskyquest.pages.dev/';
 const name: string = 'realSkyQuest';
-const description: string = 'SvelteKit blog for poets';
+const description: string =
+	'I am a young software engineer called realSkyQuest, welcome to my website.';
 const author: string = 'realSkyQuest';
 
 // Export

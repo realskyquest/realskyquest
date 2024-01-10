@@ -4,8 +4,11 @@ import type { Post } from '$lib/blog/types';
 export const prerender = true;
 
 export async function GET({ fetch }) {
-	const response = await fetch('api/posts');
-	const posts: Post[] = await response.json();
+	const response1 = await fetch('api/posts');
+	const posts1: Post[] = await response1.json();
+
+	const response2 = await fetch('api/projects');
+	const posts2: Post[] = await response2.json();
 
 	const headers = { 'Content-Type': 'application/xml' };
 
@@ -15,15 +18,28 @@ export async function GET({ fetch }) {
 		<title>${site.name}</title>
 		<description>${site.description}</description>
 		<link>${site.url}</link>
-		<atom:link href="${site.url}/rss.xml" rel="self" type="application/rss+xml"/>
-		${posts
+		<atom:link href="${site.url}rss.xml" rel="self" type="application/rss+xml"/>
+		${posts1
 			.map(
 				(post) => `
 				<item>
 					<title>${post.title}</title>
 					<description>${post.description}</description>
-					<link>${site.url}/${post.slug}</link>
-					<guid isPermaLink="true">${site.url}/${post.slug}</guid>
+					<link>${site.url}${post.slug}</link>
+					<guid isPermaLink="true">${site.url}${post.slug}</guid>
+					<pubDate>${new Date(post.date).toUTCString()}</pubDate>
+				</item>
+				`
+			)
+			.join('')}
+		${posts2
+			.map(
+				(post) => `
+				<item>
+					<title>${post.title}</title>
+					<description>${post.description}</description>
+					<link>${site.url}${post.slug}</link>
+					<guid isPermaLink="true">${site.url}${post.slug}</guid>
 					<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 				</item>
 				`
