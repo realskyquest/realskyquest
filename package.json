@@ -11,7 +11,7 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"pages:dev": "wrangler pages dev --compatibility-date=2023-12-18 --proxy 5173 -- pnpm run dev",
-		"pages:deploy": "pnpm run build && svelte-sitemap --domain https://realskyquest.pages.dev && wrangler pages deploy build"
+		"pages:deploy": "pnpm run build && wrangler pages deploy build"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.1",
