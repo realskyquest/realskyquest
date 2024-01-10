@@ -1,0 +1,52 @@
+{
+	"name": "realskyquest",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
+		"pages:dev": "wrangler pages dev --compatibility-date=2023-12-18 --proxy 5173 -- pnpm run dev",
+		"pages:deploy": "pnpm run build && svelte-sitemap --domain https://realskyquest.pages.dev && wrangler pages deploy build"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/kit": "^2.1.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.1",
+		"@tailwindcss/typography": "^0.5.10",
+		"@types/eslint": "8.56.0",
+		"@typescript-eslint/eslint-plugin": "^6.18.1",
+		"@typescript-eslint/parser": "^6.18.1",
+		"autoprefixer": "^10.4.16",
+		"daisyui": "^4.5.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"mdsvex": "^0.11.0",
+		"postcss": "^8.4.33",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"reading-time-estimator": "^1.9.4",
+		"schema-dts": "^1.1.2",
+		"svelte": "^4.2.8",
+		"svelte-check": "^3.6.2",
+		"svelte-typewriter": "^3.2.3",
+		"tailwindcss": "^3.4.1",
+		"tslib": "^2.6.2",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.11",
+		"vite-imagetools": "^6.2.9",
+		"wrangler": "^3.22.3"
+	},
+	"type": "module",
+	"dependencies": {
+		"rehype-slug": "^6.0.0",
+		"remark-toc": "^9.0.0",
+		"remark-unwrap-images": "^4.0.0",
+		"shiki": "^0.14.7"
+	}
+}

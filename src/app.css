@@ -1,0 +1,293 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Format 1 */
+.p36-bg-PlumPurple {
+	@apply bg-[#5e315b];
+}
+
+.p36-bg-Rosewood {
+	@apply bg-[#8c3f5d];
+}
+
+.p36-bg-CopperRed {
+	@apply bg-[#ba6156];
+}
+
+.p36-bg-OrangeYellow {
+	@apply bg-[#f2a65e];
+}
+
+.p36-bg-PaleYellow {
+	@apply bg-[#ffe478];
+}
+
+.p36-bg-Icterine {
+	@apply bg-[#cfff70];
+}
+
+.p36-bg-DollarBill {
+	@apply bg-[#8fde5d];
+}
+
+.p36-bg-PersianGreen {
+	@apply bg-[#3ca370];
+}
+
+.p36-bg-DarkSlateGray {
+	@apply bg-[#3d6e70];
+}
+
+.p36-bg-PrussianBlue {
+	@apply bg-[#323e4f];
+}
+
+.p36-bg-Blackberry {
+	@apply bg-[#322947];
+}
+
+.p36-bg-SlateBlue {
+	@apply bg-[#473b78];
+}
+
+.p36-bg-BlueBell {
+	@apply bg-[#4b5bab];
+}
+
+.p36-bg-DodgerBlue {
+	@apply bg-[#4da6ff];
+}
+
+.p36-bg-LightCyan {
+	@apply bg-[#66ffe3];
+}
+
+.p36-bg-Pale {
+	@apply bg-[#ffffeb];
+}
+
+.p36-bg-SilverPink {
+	@apply bg-[#c2c2d1];
+}
+
+.p36-bg-Grey {
+	@apply bg-[#7e7e8f];
+}
+
+.p36-bg-PaynesGrey {
+	@apply bg-[#606070];
+}
+
+.p36-bg-Charcoal {
+	@apply bg-[#43434f];
+}
+
+.p36-bg-DarkCharcoal {
+	@apply bg-[#272736];
+}
+
+.p36-bg-Eggplant {
+	@apply bg-[#3e2347];
+}
+
+.p36-bg-PansyPurple {
+	@apply bg-[#57294b];
+}
+
+.p36-bg-ChestnutRose {
+	@apply bg-[#964253];
+}
+
+.p36-bg-FlamingoPink {
+	@apply bg-[#e36956];
+}
+
+.p36-bg-LightSalmon {
+	@apply bg-[#ffb570];
+}
+
+.p36-bg-WestSide {
+	@apply bg-[#ff9166];
+}
+
+.p36-bg-Cinnabar {
+	@apply bg-[#eb564b];
+}
+
+.p36-bg-HollywoodCerise {
+	@apply bg-[#b0305c];
+}
+
+.p36-bg-Patriarch {
+	@apply bg-[#73275c];
+}
+
+.p36-bg-Blackberry {
+	@apply bg-[#422445];
+}
+
+.p36-bg-Plum {
+	@apply bg-[#5a265e];
+}
+
+.p36-bg-DeepCerise {
+	@apply bg-[#80366b];
+}
+
+.p36-bg-FandangoPink {
+	@apply bg-[#bd4882];
+}
+
+.p36-bg-BubbleGum {
+	@apply bg-[#ff6b97];
+}
+
+.p36-bg-Cupid {
+	@apply bg-[#ffb5b5];
+}
+
+/* Format 2 */
+.p36-text-PlumPurple {
+	@apply text-[#5e315b];
+}
+
+.p36-text-Rosewood {
+	@apply text-[#8c3f5d];
+}
+
+.p36-text-CopperRed {
+	@apply text-[#ba6156];
+}
+
+.p36-text-OrangeYellow {
+	@apply text-[#f2a65e];
+}
+
+.p36-text-PaleYellow {
+	@apply text-[#ffe478];
+}
+
+.p36-text-Icterine {
+	@apply text-[#cfff70];
+}
+
+.p36-text-DollarBill {
+	@apply text-[#8fde5d];
+}
+
+.p36-text-PersianGreen {
+	@apply text-[#3ca370];
+}
+
+.p36-text-DarkSlateGray {
+	@apply text-[#3d6e70];
+}
+
+.p36-text-PrussianBlue {
+	@apply text-[#323e4f];
+}
+
+.p36-text-Blackberry {
+	@apply text-[#322947];
+}
+
+.p36-text-SlateBlue {
+	@apply text-[#473b78];
+}
+
+.p36-text-BlueBell {
+	@apply text-[#4b5bab];
+}
+
+.p36-text-DodgerBlue {
+	@apply text-[#4da6ff];
+}
+
+.p36-text-LightCyan {
+	@apply text-[#66ffe3];
+}
+
+.p36-text-Pale {
+	@apply text-[#ffffeb];
+}
+
+.p36-text-SilverPink {
+	@apply text-[#c2c2d1];
+}
+
+.p36-text-Grey {
+	@apply text-[#7e7e8f];
+}
+
+.p36-text-PaynesGrey {
+	@apply text-[#606070];
+}
+
+.p36-text-Charcoal {
+	@apply text-[#43434f];
+}
+
+.p36-text-DarkCharcoal {
+	@apply text-[#272736];
+}
+
+.p36-text-Eggplant {
+	@apply text-[#3e2347];
+}
+
+.p36-text-PansyPurple {
+	@apply text-[#57294b];
+}
+
+.p36-text-ChestnutRose {
+	@apply text-[#964253];
+}
+
+.p36-text-FlamingoPink {
+	@apply text-[#e36956];
+}
+
+.p36-text-LightSalmon {
+	@apply text-[#ffb570];
+}
+
+.p36-text-WestSide {
+	@apply text-[#ff9166];
+}
+
+.p36-text-Cinnabar {
+	@apply text-[#eb564b];
+}
+
+.p36-text-HollywoodCerise {
+	@apply text-[#b0305c];
+}
+
+.p36-text-Patriarch {
+	@apply text-[#73275c];
+}
+
+.p36-text-Blackberry {
+	@apply text-[#422445];
+}
+
+.p36-text-Plum {
+	@apply text-[#5a265e];
+}
+
+.p36-text-DeepCerise {
+	@apply text-[#80366b];
+}
+
+.p36-text-FandangoPink {
+	@apply text-[#bd4882];
+}
+
+.p36-text-BubbleGum {
+	@apply text-[#ff6b97];
+}
+
+.p36-text-Cupid {
+	@apply text-[#ffb5b5];
+}
