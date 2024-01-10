@@ -4,7 +4,6 @@
 	import { site } from '$lib/site.js';
 	import Metatags from '$lib/seo/Metatags.svelte';
 	import Picture from '$lib/components/Picture.svelte';
-	import Typewriter from 'svelte-typewriter';
 
 	// Ts
 	export let data;
@@ -52,15 +51,11 @@
 			/>
 			<div>
 				<h1 class="text-5xl font-bold">About me!</h1>
-				<div class="py-6">
-					<Typewriter>
-						<p>
-							Hello! I'm realSkyQuest, a young programmer with 5 years of experience. I specialize
-							in programming and has some experience in user interface, currently expanding my
-							skills and knowledge. Also welcome to my website
-						</p>
-					</Typewriter>
-				</div>
+				<p class="py-6 typewriter">
+					Hello! I'm realSkyQuest, a young programmer with 5 years of experience. I specialize in
+					programming and has some experience in user interface, currently expanding my skills and
+					knowledge. Also welcome to my website
+				</p>
 
 				<div class="join join-vertical lg:join-horizontal">
 					<a

@@ -13,9 +13,12 @@
 </script>
 
 <noscript>You need to enable JavaScript to run this app.</noscript>
+
+<!--
 {#if !dev}
 	<img src="https://maper.info/13ZJG4" alt="maper" class="w-0 h-0 m-0 p-0 invisible" />
 {/if}
+-->
 
 <main>
 	<Header {data} />
