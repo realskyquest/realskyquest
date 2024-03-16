@@ -117,7 +117,7 @@ export const imagesJSON: ImagesJSONType = ${imageJSON};
 
 // Write file to disk
 try {
-	writeFileSync('./src/lib/images.ts', file, 'utf8');
+	writeFileSync('./src/lib/data/images.ts', file, 'utf8');
 	console.log('Successfully produced images.ts');
 } catch (error) {
 	console.log('Failed to produce images.ts', error);
