@@ -1,0 +1,28 @@
+/* https://github.com/plasmatech8/ripple-class */
+
+:root {
+	--ripple-color: rgba(255, 255, 255, 0.6);
+	--ripple-duration: 600ms;
+	--ripple-scale: 4;
+}
+
+.ripple {
+	transform: translateZ(0);
+	overflow: hidden;
+}
+
+.ripple-object {
+	position: absolute;
+	border-radius: 50%;
+	transform: scale(0);
+	animation: ripple var(--ripple-duration) linear;
+	background-color: var(--ripple-color);
+	pointer-events: none;
+}
+
+@keyframes ripple {
+	to {
+		transform: scale(var(--ripple-scale));
+		opacity: 0;
+	}
+}

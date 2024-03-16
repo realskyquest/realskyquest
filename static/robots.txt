@@ -1,0 +1,5 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /_app/
+
+Sitemap: https://realskyquest.pages.dev/sitemap.xml
