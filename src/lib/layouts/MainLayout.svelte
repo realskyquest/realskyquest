@@ -6,7 +6,7 @@
 	<input id="main-drawer" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content">
 		<!-- Page content here -->
-		<div class="navbar bg-neutral text-neutral-content fixed top-0 glass">
+		<div class="navbar bg-neutral text-neutral-content sticky top-0 z-30">
 			<div class="flex-none">
 				<label for="main-drawer" class="btn btn-ghost drawer-button lg:hidden">
 					<svg
@@ -31,7 +31,6 @@
 			</div>
 		</div>
 
-		<div class="h-[4rem]"></div>
 		<slot />
 
 		<footer class="footer footer-center p-4 bg-base-300 text-base-content">
@@ -40,7 +39,7 @@
 			</aside>
 		</footer>
 	</div>
-	<div class="drawer-side">
+	<div class="drawer-side z-40">
 		<label for="main-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
 		<ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
 			<!-- Sidebar content here -->
