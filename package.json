@@ -10,7 +10,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"imagesGen": "node imagesGen.js && prettier --write ./src/lib/images.ts && eslint ./src/lib/images.ts"
+		"imagesGen": "node imagesGen.js && prettier --write ./src/lib/data/images.ts && eslint ./src/lib/data/images.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
