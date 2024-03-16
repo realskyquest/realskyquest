@@ -1,6 +1,7 @@
+// Squelch warnings of image imports from your images dir
+declare module '/src/images/*';
 
 // svelte-preprocess-delegate-events/preprocess
-
 declare namespace svelteHTML {
 	/**
 	 * base: https://github.com/sveltejs/language-tools/blob/651db67858d18ace44d000d263ac57ed5590ea05/packages/svelte2tsx/svelte-jsx.d.ts#L42

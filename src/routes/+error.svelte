@@ -7,6 +7,8 @@
 
 <svelte:head>
 	<title>404 Not Found</title>
+	<link rel="canonical" href="{config.base}/404" />
+    <meta name="description" content="404 Not Found" />
 
 	<meta name="robots" content="noindex" />
 
