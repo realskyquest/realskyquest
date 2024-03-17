@@ -1,6 +1,8 @@
 <script lang="ts">
 	import 'tailwindcss/tailwind.css';
 	import '$lib/assets/styles/typography.css';
+	import '../app.css';
+
 	import config from '$lib/data/config';
 	import MainLayout from '$lib/layouts/MainLayout.svelte';
 
