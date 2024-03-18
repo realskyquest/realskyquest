@@ -45,14 +45,14 @@
 </section>
 
 <section id="technologies">
-	<div class="mockup-browser border border-base-300 m-4">
+	<div class="mockup-browser bg-base-300 m-8 mt-[5rem]">
 		<div class="mockup-browser-toolbar">
-			<div class="input border border-base-300">{config.base}/#technologies</div>
+			<div class="input">{config.base}/#technologies</div>
 		</div>
-		<div class="flex py-4 border-t border-base-300">
+		<div class="flex py-4 bg-base-200">
 			<article class="typography mx-auto px-2">
-				<h2>Technologies</h2>
-				<blockquote>Technologies that I have confidence on using</blockquote>
+				<h2 class="text-primary">Technologies</h2>
+				<blockquote class="bg-base-300">Technologies that I have confidence on using</blockquote>
 				<Lorem />
 			</article>
 		</div>
@@ -60,14 +60,14 @@
 </section>
 
 <section id="tools-and-frameworks">
-	<div class="mockup-browser border border-base-300 m-4">
+	<div class="mockup-browser bg-base-300 m-8 mt-[5rem] mb-[8rem]">
 		<div class="mockup-browser-toolbar">
-			<div class="input border border-base-300">{config.base}/#tools-and-frameworks</div>
+			<div class="input">{config.base}/#tools-and-frameworks</div>
 		</div>
-		<div class="flex py-4 border-t border-base-300">
+		<div class="flex py-4 bg-base-200">
 			<article class="typography mx-auto px-2">
-				<h2>Tools and Frameworks</h2>
-				<blockquote>Tools and Frameworks that I have confidence on using</blockquote>
+				<h2 class="text-primary">Tools and Frameworks</h2>
+				<blockquote class="bg-base-300">Tools and Frameworks that I have confidence on using</blockquote>
 				<Lorem />
 			</article>
 		</div>
