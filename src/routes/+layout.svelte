@@ -1,5 +1,6 @@
 <script lang="ts">
 	import 'tailwindcss/tailwind.css';
+	import '$lib/assets/styles/ripple.css'
 	import '$lib/assets/styles/typography.css';
 	import '../app.css';
 

@@ -32,6 +32,7 @@
 		"hono": "^4.1.0",
 		"parse-duration": "^1.1.0",
 		"postcss": "^8.4.35",
+		"postcss-import": "^16.0.1",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
 		"svelte": "^4.2.7",

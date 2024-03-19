@@ -10,7 +10,7 @@
 	<link rel="canonical" href="{config.base}/404" />
     <meta name="description" content="404 Not Found" />
 
-	<meta name="robots" content="noindex" />
+	<meta name="robots" content="noindex, nofollow" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content={config.title} />

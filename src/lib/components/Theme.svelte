@@ -1,3 +1,11 @@
+<script lang="ts">
+	import { RippleEffect } from '$lib/utils/ripple';
+
+	function handleRipple(event: MouseEvent) {
+		RippleEffect(event as MouseEvent, false);
+	}
+</script>
+
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 <div
 	title="Change Theme"
@@ -33,7 +41,8 @@
 	>
 		<div class="grid grid-cols-1 gap-3 p-3">
 			<button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="light"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -61,7 +70,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4 [&amp;_svg]:visible"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4 [&amp;_svg]:visible"
 				data-set-theme="dark"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -89,7 +99,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="cupcake"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -117,7 +128,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="bumblebee"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -145,7 +157,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="emerald"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -173,7 +186,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="corporate"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -201,7 +215,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="synthwave"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -229,7 +244,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="retro"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -257,7 +273,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="cyberpunk"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -285,7 +302,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="valentine"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -313,7 +331,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="halloween"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -341,7 +360,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="garden"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -369,7 +389,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="forest"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -397,7 +418,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="aqua"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -425,7 +447,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="lofi"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -453,7 +476,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="pastel"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -481,7 +505,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="fantasy"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -509,7 +534,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="wireframe"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -537,7 +563,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="black"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -565,7 +592,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="luxury"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -593,7 +621,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="dracula"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -621,7 +650,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="cmyk"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -649,7 +679,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="autumn"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -677,7 +708,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="business"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -705,7 +737,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="acid"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -733,7 +766,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="lemonade"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -761,7 +795,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="night"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -789,7 +824,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="coffee"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -817,7 +853,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="winter"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -845,7 +882,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="dim"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -873,7 +911,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple dark-ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="nord"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -901,7 +940,8 @@
 					></span
 				></button
 			><button
-				class="outline-base-content text-start outline-offset-4"
+				on:click={handleRipple}
+				class="ripple outline-base-content text-start outline-offset-4"
 				data-set-theme="sunset"
 				data-act-class="[&amp;_svg]:visible"
 				><span
@@ -932,3 +972,11 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	.dark-ripple {
+		--ripple-color: rgba(50, 50, 50, 0.6); /* Default: rgba(255, 255, 255, 0.6) */
+		--ripple-duration: 600ms; /* Default: 600ms */
+		--ripple-scale: 4; /* Default: 4 */
+	}
+</style>
