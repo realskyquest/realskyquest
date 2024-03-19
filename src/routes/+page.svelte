@@ -16,6 +16,8 @@
 		title = 'Skills';
 	} else if ($page.url.hash === '#education') {
 		title = 'Education';
+	} else if ($page.url.hash === '#contact') {
+		title = 'Contact'
 	}
 </script>
 
@@ -58,7 +60,7 @@
 <Skills />
 <Education />
 
-<section>
+<section id="contact">
 	<div class="mockup-browser bg-base-300 m-8 mb-[5rem]">
 		<div class="mockup-browser-toolbar">
 			<div class="input">{config.base}/#contact</div>
