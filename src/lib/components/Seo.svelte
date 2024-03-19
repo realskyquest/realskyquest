@@ -11,7 +11,7 @@
     <meta name="twitter:site" content={config.title} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={config.description} />
-    <meta name="twitter:image" content="/assets/banner.jpeg" />
+    <meta name="twitter:image" content="/assets/banner.jpg" />
     <meta name="twitter:image:alt" content="Website banner" />
 
     <meta property="og:site_name" content={config.title} />
@@ -21,7 +21,7 @@
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={config.description} />
 
-	<meta property="og:image" content="/assets/banner.jpeg" />
+	<meta property="og:image" content="/assets/banner.jpg" />
 	<meta property="og:image:width" content="1000" />
 	<meta property="og:image:height" content="500" />
 	<meta property="og:image:alt" content="Website banner" />
