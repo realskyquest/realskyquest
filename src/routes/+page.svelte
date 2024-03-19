@@ -68,7 +68,7 @@
 				<h2 class="text-primary px-8">CONTACT</h2>
 			</article>
 			<div class="flex justify-center gap-x-4 mt-6 mb-4">
-				<a href="https://github.com/realskyquest/" target="_blank"
+				<a href="https://github.com/realskyquest/" target="_blank" aria-label="Go to realSkyQuest's github"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="48"
@@ -85,7 +85,7 @@
 						/><path d="M9 18c-4.51 2-5-2-7-2" /></svg
 					></a
 				>
-				<a href="mailto:connectSkyQuest@outlook.com"
+				<a href="mailto:connectSkyQuest@outlook.com" aria-label="Go to realSkyQuest's email"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="48"

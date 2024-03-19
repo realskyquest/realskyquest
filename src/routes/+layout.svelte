@@ -45,6 +45,7 @@
 	<link rel="icon" href="/favicon.ico" sizes="48x48" />
 	<link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
 	<link rel="mask-icon" href="/pwa-512x512.png" color={config.pwa.background_color} />
+	<meta name="theme-color" content="{config.pwa.theme_color}"/>
 
 	<!-- <link rel="alternate" type="application/atom+xml" href="{config.base}/feed.xml" />
 	<link rel="alternate" type="application/json" href="{config.base}/feed.json" /> -->
