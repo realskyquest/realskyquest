@@ -1,70 +1,26 @@
 <script lang="ts">
 	import { imagesJSON } from '$lib/data/images';
 	const image = imagesJSON['/src/images/banner.jpg'];
-	const sizes = `${500}px`;
+
+	const sizesSTR: string = '1000px';
+	const widthSTR: string = '1000px';
+	const heightSTR: string = '800px';
 </script>
 
-<picture class="hidden 2xl:block">
-	<source {sizes} srcset={image.avif} type="image/avif" />
-	<source {sizes} srcset={image.webp} type="image/webp" />
+<picture>
+	<source sizes={sizesSTR} srcset={image.avif} type="image/avif" />
+	<source sizes={sizesSTR} srcset={image.webp} type="image/webp" />
 	<img
-		alt="Banner for website"
+		alt="Banner of author"
+		fetchpriority="high"
 		loading="eager"
 		decoding="async"
-		{sizes}
+		sizes={sizesSTR}
+		width={widthSTR}
+		height={heightSTR}
+		class="rounded-box px-2 mt-2 lg:rounded-none lg:px-0 lg:mt-0 object-cover h-[200px] lg:h-[530px] min-[1100px]:h-[490px] min-[1200px]:h-[440px] min-[1300px]:h-[390px]"
+		style="width: {widthSTR};"
 		src={image.src}
 		srcset={image.jpeg}
-		width="{500}px"
-		height="{400}px"
-		style="object-fit: cover; width: {500}px; height: {400}px;"
-		class="rounded-box px-2 mt-2 lg:rounded-none lg:px-0 lg:mt-0"
-	/>
-</picture>
-<picture class="hidden xl:block 2xl:hidden">
-	<source {sizes} srcset={image.avif} type="image/avif" />
-	<source {sizes} srcset={image.webp} type="image/webp" />
-	<img
-		alt="Banner for website"
-		loading="eager"
-		decoding="async"
-		{sizes}
-		src={image.src}
-		srcset={image.jpeg}
-		width="{500}px"
-		height="{450}px"
-		style="object-fit: cover; width: {500}px; height: {450}px;"
-		class="rounded-box px-2 mt-2 lg:rounded-none lg:px-0 lg:mt-0"
-	/>
-</picture>
-<picture class="hidden lg:block xl:hidden">
-	<source {sizes} srcset={image.avif} type="image/avif" />
-	<source {sizes} srcset={image.webp} type="image/webp" />
-	<img
-		alt="Banner for website"
-		loading="eager"
-		decoding="async"
-		{sizes}
-		src={image.src}
-		srcset={image.jpeg}
-		width="{500}px"
-		height="{500}px"
-		style="object-fit: cover; width: {500}px; height: {500}px;"
-		class="rounded-box px-2 mt-2 lg:rounded-none lg:px-0 lg:mt-0"
-	/>
-</picture>
-<picture class="lg:hidden">
-	<source {sizes} srcset={image.avif} type="image/avif" />
-	<source {sizes} srcset={image.webp} type="image/webp" />
-	<img
-		alt="Banner for website"
-		loading="eager"
-		decoding="async"
-		{sizes}
-		src={image.src}
-		srcset={image.jpeg}
-		width="{500}px"
-		height="{200}px"
-		style="object-fit: cover; width: {500}px; height: {200}px;"
-		class="rounded-box px-2 mt-2 lg:rounded-none lg:px-0 lg:mt-0"
 	/>
 </picture>
