@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 	import Seo from '$lib/components/Seo.svelte';
 
-	import Image from '$lib/components/image/Image.svelte';
+	import Image from '$lib/components/Image.svelte';
 
 	import Skills from '$lib/page/Skills.svelte';
 	import Education from '$lib/page/Education.svelte';
